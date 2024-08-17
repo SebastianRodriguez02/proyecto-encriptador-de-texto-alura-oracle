@@ -1,0 +1,241 @@
+/* Estilos Globales */
+body {
+    background: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px; /* Usar tamaño base más pequeño */
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset de márgenes y padding para todos los elementos */
+* {
+    box-sizing: border-box; /* Para incluir padding y border en el tamaño total */
+}
+
+
+
+/* Logo */
+.contenedor {
+    display: flex;
+    justify-content:space-between;
+
+}
+
+.logo {
+    padding-top: 50px;
+    margin-left: 200px;
+    width: 150px; /* Tamaño fijo razonable */
+    max-width: 100%; /* Ajuste responsive */
+    height: auto;
+  
+}
+
+.logo1 {
+    padding-top: 50px;
+    margin-right: 500px;
+    width: 150px; /* Tamaño fijo razonable */
+    max-width: 100%; /* Ajuste responsive */
+    height: auto;
+}
+
+
+
+/* Main Container */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alinea al centro en pantallas pequeñas */
+    margin: 0 30% 2.6% 5%; /* Márgenes laterales para pequeñas pantallas */
+    gap: 10%; /* Espacio entre secciones */
+}
+
+/* Text Area */
+.text-area {
+    background: #F3F5FC;
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 500px; /* Limitar tamaño máximo */
+    height: 428px; /* Altura fija */
+    border: none;
+    color: #0A3871;
+    text-transform: lowercase;
+    resize: none;
+    margin-top: 98px; /* Separación superior */
+    font-size: 17px;
+    
+}
+
+::placeholder {color: #0A3871; font-size: 17px; } 
+    .text-area:focus {
+        outline: none;
+    }
+
+
+/* Mensaje */
+.mensaje {
+    width: 150%;
+    max-width: 500px;
+    height: 500px;
+    background: white;
+    background-image: url("../img/muneco.png");
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    border: none;
+    border-radius: 24px;
+    color: #0A3871;
+    padding: 20px;
+    resize: none;
+    margin-top: 98px; 
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+/* Botones */
+.botones {
+    display: flex;
+    flex-wrap: wrap; /* Para que los botones salten a la siguiente línea en pantallas pequeñas */
+    margin-top: 18px;
+    
+}
+
+button {
+    height: 50px;
+    width: 200px;
+    border-radius: 24px;
+    cursor: pointer;
+    margin: 5px;
+    
+    
+}
+
+.btn-encriptar, .copiar  {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color:  #0A3871;
+}
+
+.btn-encriptar:hover {
+    background-color: #0A3871;
+    color: white;
+}
+
+.copiar:hover {
+    background-color: #0A3871;
+    color: white;
+
+}
+
+
+.btn-desencriptar {
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    color:  #0A3871;
+}
+
+.btn-desencriptar:hover {
+    background-color: #0A3871;
+    color: white;
+}
+
+
+
+/* Información */
+.informacion {
+    color: #495057;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #0A3871;
+    color: #D8DFE8;
+    text-align: center;
+    font-size: 12px;
+    padding: 24px;
+}
+
+.footer__texto {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+
+    .contenedor {
+        display: flex;
+        justify-content:center;
+        margin-left: 200px;
+    
+    }
+    .logo {
+        width: 100px;
+       
+    }
+
+    .text-area, .mensaje {
+        width: 250px;
+        height: 320px;
+        text-align: center;
+        margin-left: 100px
+        
+    }
+    .botones {
+        display: flex;
+        justify-content: center;
+        
+    }
+   
+    .btn-encriptar, .btn-desencriptar, .copiar {
+        width: 200px;
+        font-size: 14px;
+        margin-left: 100px
+        
+       
+    }
+
+    .informacion {
+        font-size: 12px;
+        text-align: center;
+        
+    }
+}
+
+@media (max-width: 480px) {
+
+   
+
+    .text-area, .mensaje {
+        width: 220px;
+        height: 320px;
+        text-align: center;
+        margin-left: 100px
+        
+        
+    }
+
+    .informacion {
+        font-size: 12px;
+        text-align: center;
+        
+
+        
+    }
+
+    .botones {
+        display: flex;
+        justify-content: center;
+              
+    }
+    
+    button {
+        height: 40px;
+        width: 140px;
+        
+        
+        
+    }
+}
