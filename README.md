@@ -5,6 +5,8 @@ Este repositorio contiene la resolución del Challenge "Encriptador de Texto". C
 
 Este fue el primer reto de la formación Oracle Next Education (ONE) en colaboración con Alura LATAM, y su objetivo principal es poner en práctica los fundamentos del desarrollo Frontend, la manipulación del DOM (Document Object Model) y la lógica de programación básica.
 
+🔗 **[Visita el proyecto en vivo haciendo clic aquí](https://sebastianrodriguez02.github.io/proyecto-encriptador-de-texto-alura-oracle/)**
+
 ## 📚 Historia y Contexto
 El desafío consistió en construir una interfaz gráfica donde el usuario pudiera ingresar un texto y transformarlo según unas reglas de encriptación específicas (por ejemplo, la letra "a" se convierte en "ai", la "e" en "enter", etc.). 
 
